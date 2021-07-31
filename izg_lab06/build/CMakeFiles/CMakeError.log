@@ -1,0 +1,1244 @@
+Performing C SOURCE FILE Test HAVE_GCC_PREFERRED_STACK_BOUNDARY failed with the following output:
+Change Dir: /home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_8f645/fast && /usr/bin/make  -f CMakeFiles/cmTC_8f645.dir/build.make CMakeFiles/cmTC_8f645.dir/build
+make[1]: Entering directory '/home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_8f645.dir/src.c.o
+/usr/bin/cc -DHAVE_GCC_PREFERRED_STACK_BOUNDARY  -g -O3 -idirafter "/home/david/VSC/IZG/izg_lab06/libs/SDL2-2.0.14/src/video/khronos" -mpreferred-stack-boundary=2 -o CMakeFiles/cmTC_8f645.dir/src.c.o -c /home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp/src.c
+cc1: error: ‘-mpreferred-stack-boundary=2’ is not between 3 and 12
+make[1]: *** [CMakeFiles/cmTC_8f645.dir/build.make:78: CMakeFiles/cmTC_8f645.dir/src.c.o] Error 1
+make[1]: Leaving directory '/home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:127: cmTC_8f645/fast] Error 2
+
+
+Source file was:
+int x = 0; int main(int argc, char **argv) {}
+Performing C SOURCE FILE Test HAVE_ALTIVEC_H_HDR failed with the following output:
+Change Dir: /home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_0aceb/fast && /usr/bin/make  -f CMakeFiles/cmTC_0aceb.dir/build.make CMakeFiles/cmTC_0aceb.dir/build
+make[1]: Entering directory '/home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_0aceb.dir/src.c.o
+/usr/bin/cc -DHAVE_ALTIVEC_H_HDR  -g -O3 -idirafter "/home/david/VSC/IZG/izg_lab06/libs/SDL2-2.0.14/src/video/khronos" -maltivec -o CMakeFiles/cmTC_0aceb.dir/src.c.o -c /home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp/src.c
+cc: error: unrecognized command line option ‘-maltivec’
+make[1]: *** [CMakeFiles/cmTC_0aceb.dir/build.make:78: CMakeFiles/cmTC_0aceb.dir/src.c.o] Error 1
+make[1]: Leaving directory '/home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:127: cmTC_0aceb/fast] Error 2
+
+
+Source file was:
+
+          #include <altivec.h>
+          vector unsigned int vzero() {
+              return vec_splat_u32(0);
+          }
+          int main(int argc, char **argv) { }
+Performing C SOURCE FILE Test HAVE_ALTIVEC failed with the following output:
+Change Dir: /home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_18d33/fast && /usr/bin/make  -f CMakeFiles/cmTC_18d33.dir/build.make CMakeFiles/cmTC_18d33.dir/build
+make[1]: Entering directory '/home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_18d33.dir/src.c.o
+/usr/bin/cc -DHAVE_ALTIVEC  -g -O3 -idirafter "/home/david/VSC/IZG/izg_lab06/libs/SDL2-2.0.14/src/video/khronos" -maltivec -o CMakeFiles/cmTC_18d33.dir/src.c.o -c /home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp/src.c
+cc: error: unrecognized command line option ‘-maltivec’
+make[1]: *** [CMakeFiles/cmTC_18d33.dir/build.make:78: CMakeFiles/cmTC_18d33.dir/src.c.o] Error 1
+make[1]: Leaving directory '/home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:127: cmTC_18d33/fast] Error 2
+
+
+Source file was:
+
+          vector unsigned int vzero() {
+              return vec_splat_u32(0);
+          }
+          int main(int argc, char **argv) { }
+Determining if the include file libunwind.h exists failed with the following output:
+Change Dir: /home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_2c1a9/fast && /usr/bin/make  -f CMakeFiles/cmTC_2c1a9.dir/build.make CMakeFiles/cmTC_2c1a9.dir/build
+make[1]: Entering directory '/home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_2c1a9.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -g -O3 -idirafter "/home/david/VSC/IZG/izg_lab06/libs/SDL2-2.0.14/src/video/khronos"  -o CMakeFiles/cmTC_2c1a9.dir/CheckIncludeFile.c.o -c /home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: libunwind.h: No such file or directory
+    1 | #include <libunwind.h>
+      |          ^~~~~~~~~~~~~
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTC_2c1a9.dir/build.make:78: CMakeFiles/cmTC_2c1a9.dir/CheckIncludeFile.c.o] Error 1
+make[1]: Leaving directory '/home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:127: cmTC_2c1a9/fast] Error 2
+
+
+
+Determining if the strlcpy exist failed with the following output:
+Change Dir: /home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_31bc0/fast && /usr/bin/make  -f CMakeFiles/cmTC_31bc0.dir/build.make CMakeFiles/cmTC_31bc0.dir/build
+make[1]: Entering directory '/home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_31bc0.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -g -O3 -idirafter "/home/david/VSC/IZG/izg_lab06/libs/SDL2-2.0.14/src/video/khronos"  -o CMakeFiles/cmTC_31bc0.dir/CheckSymbolExists.c.o -c /home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: error: ‘strlcpy’ undeclared (first use in this function); did you mean ‘strncpy’?
+   14 |   return ((int*)(&strlcpy))[argc];
+      |                   ^~~~~~~
+      |                   strncpy
+/home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: note: each undeclared identifier is reported only once for each function it appears in
+make[1]: *** [CMakeFiles/cmTC_31bc0.dir/build.make:78: CMakeFiles/cmTC_31bc0.dir/CheckSymbolExists.c.o] Error 1
+make[1]: Leaving directory '/home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:127: cmTC_31bc0/fast] Error 2
+
+
+File /home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stddef.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <wchar.h>
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef strlcpy
+  return ((int*)(&strlcpy))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the strlcat exist failed with the following output:
+Change Dir: /home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_73219/fast && /usr/bin/make  -f CMakeFiles/cmTC_73219.dir/build.make CMakeFiles/cmTC_73219.dir/build
+make[1]: Entering directory '/home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_73219.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -g -O3 -idirafter "/home/david/VSC/IZG/izg_lab06/libs/SDL2-2.0.14/src/video/khronos"  -o CMakeFiles/cmTC_73219.dir/CheckSymbolExists.c.o -c /home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: error: ‘strlcat’ undeclared (first use in this function); did you mean ‘strncat’?
+   14 |   return ((int*)(&strlcat))[argc];
+      |                   ^~~~~~~
+      |                   strncat
+/home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: note: each undeclared identifier is reported only once for each function it appears in
+make[1]: *** [CMakeFiles/cmTC_73219.dir/build.make:78: CMakeFiles/cmTC_73219.dir/CheckSymbolExists.c.o] Error 1
+make[1]: Leaving directory '/home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:127: cmTC_73219/fast] Error 2
+
+
+File /home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stddef.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <wchar.h>
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef strlcat
+  return ((int*)(&strlcat))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the _strrev exist failed with the following output:
+Change Dir: /home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_48f27/fast && /usr/bin/make  -f CMakeFiles/cmTC_48f27.dir/build.make CMakeFiles/cmTC_48f27.dir/build
+make[1]: Entering directory '/home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_48f27.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -g -O3 -idirafter "/home/david/VSC/IZG/izg_lab06/libs/SDL2-2.0.14/src/video/khronos"  -o CMakeFiles/cmTC_48f27.dir/CheckSymbolExists.c.o -c /home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: error: ‘_strrev’ undeclared (first use in this function)
+   14 |   return ((int*)(&_strrev))[argc];
+      |                   ^~~~~~~
+/home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: note: each undeclared identifier is reported only once for each function it appears in
+make[1]: *** [CMakeFiles/cmTC_48f27.dir/build.make:78: CMakeFiles/cmTC_48f27.dir/CheckSymbolExists.c.o] Error 1
+make[1]: Leaving directory '/home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:127: cmTC_48f27/fast] Error 2
+
+
+File /home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stddef.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <wchar.h>
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef _strrev
+  return ((int*)(&_strrev))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the _strupr exist failed with the following output:
+Change Dir: /home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_4d8ae/fast && /usr/bin/make  -f CMakeFiles/cmTC_4d8ae.dir/build.make CMakeFiles/cmTC_4d8ae.dir/build
+make[1]: Entering directory '/home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_4d8ae.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -g -O3 -idirafter "/home/david/VSC/IZG/izg_lab06/libs/SDL2-2.0.14/src/video/khronos"  -o CMakeFiles/cmTC_4d8ae.dir/CheckSymbolExists.c.o -c /home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: error: ‘_strupr’ undeclared (first use in this function)
+   14 |   return ((int*)(&_strupr))[argc];
+      |                   ^~~~~~~
+/home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: note: each undeclared identifier is reported only once for each function it appears in
+make[1]: *** [CMakeFiles/cmTC_4d8ae.dir/build.make:78: CMakeFiles/cmTC_4d8ae.dir/CheckSymbolExists.c.o] Error 1
+make[1]: Leaving directory '/home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:127: cmTC_4d8ae/fast] Error 2
+
+
+File /home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stddef.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <wchar.h>
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef _strupr
+  return ((int*)(&_strupr))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the _strlwr exist failed with the following output:
+Change Dir: /home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_712dd/fast && /usr/bin/make  -f CMakeFiles/cmTC_712dd.dir/build.make CMakeFiles/cmTC_712dd.dir/build
+make[1]: Entering directory '/home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_712dd.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -g -O3 -idirafter "/home/david/VSC/IZG/izg_lab06/libs/SDL2-2.0.14/src/video/khronos"  -o CMakeFiles/cmTC_712dd.dir/CheckSymbolExists.c.o -c /home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: error: ‘_strlwr’ undeclared (first use in this function)
+   14 |   return ((int*)(&_strlwr))[argc];
+      |                   ^~~~~~~
+/home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: note: each undeclared identifier is reported only once for each function it appears in
+make[1]: *** [CMakeFiles/cmTC_712dd.dir/build.make:78: CMakeFiles/cmTC_712dd.dir/CheckSymbolExists.c.o] Error 1
+make[1]: Leaving directory '/home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:127: cmTC_712dd/fast] Error 2
+
+
+File /home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stddef.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <wchar.h>
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef _strlwr
+  return ((int*)(&_strlwr))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the itoa exist failed with the following output:
+Change Dir: /home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_2dce3/fast && /usr/bin/make  -f CMakeFiles/cmTC_2dce3.dir/build.make CMakeFiles/cmTC_2dce3.dir/build
+make[1]: Entering directory '/home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_2dce3.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -g -O3 -idirafter "/home/david/VSC/IZG/izg_lab06/libs/SDL2-2.0.14/src/video/khronos"  -o CMakeFiles/cmTC_2dce3.dir/CheckSymbolExists.c.o -c /home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: error: ‘itoa’ undeclared (first use in this function)
+   14 |   return ((int*)(&itoa))[argc];
+      |                   ^~~~
+/home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: note: each undeclared identifier is reported only once for each function it appears in
+make[1]: *** [CMakeFiles/cmTC_2dce3.dir/build.make:78: CMakeFiles/cmTC_2dce3.dir/CheckSymbolExists.c.o] Error 1
+make[1]: Leaving directory '/home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:127: cmTC_2dce3/fast] Error 2
+
+
+File /home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stddef.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <wchar.h>
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef itoa
+  return ((int*)(&itoa))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the _ltoa exist failed with the following output:
+Change Dir: /home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_e0af5/fast && /usr/bin/make  -f CMakeFiles/cmTC_e0af5.dir/build.make CMakeFiles/cmTC_e0af5.dir/build
+make[1]: Entering directory '/home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e0af5.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -g -O3 -idirafter "/home/david/VSC/IZG/izg_lab06/libs/SDL2-2.0.14/src/video/khronos"  -o CMakeFiles/cmTC_e0af5.dir/CheckSymbolExists.c.o -c /home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: error: ‘_ltoa’ undeclared (first use in this function)
+   14 |   return ((int*)(&_ltoa))[argc];
+      |                   ^~~~~
+/home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: note: each undeclared identifier is reported only once for each function it appears in
+make[1]: *** [CMakeFiles/cmTC_e0af5.dir/build.make:78: CMakeFiles/cmTC_e0af5.dir/CheckSymbolExists.c.o] Error 1
+make[1]: Leaving directory '/home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:127: cmTC_e0af5/fast] Error 2
+
+
+File /home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stddef.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <wchar.h>
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef _ltoa
+  return ((int*)(&_ltoa))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the _uitoa exist failed with the following output:
+Change Dir: /home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_4015b/fast && /usr/bin/make  -f CMakeFiles/cmTC_4015b.dir/build.make CMakeFiles/cmTC_4015b.dir/build
+make[1]: Entering directory '/home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_4015b.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -g -O3 -idirafter "/home/david/VSC/IZG/izg_lab06/libs/SDL2-2.0.14/src/video/khronos"  -o CMakeFiles/cmTC_4015b.dir/CheckSymbolExists.c.o -c /home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: error: ‘_uitoa’ undeclared (first use in this function)
+   14 |   return ((int*)(&_uitoa))[argc];
+      |                   ^~~~~~
+/home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: note: each undeclared identifier is reported only once for each function it appears in
+make[1]: *** [CMakeFiles/cmTC_4015b.dir/build.make:78: CMakeFiles/cmTC_4015b.dir/CheckSymbolExists.c.o] Error 1
+make[1]: Leaving directory '/home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:127: cmTC_4015b/fast] Error 2
+
+
+File /home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stddef.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <wchar.h>
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef _uitoa
+  return ((int*)(&_uitoa))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the _ultoa exist failed with the following output:
+Change Dir: /home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_5f28e/fast && /usr/bin/make  -f CMakeFiles/cmTC_5f28e.dir/build.make CMakeFiles/cmTC_5f28e.dir/build
+make[1]: Entering directory '/home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_5f28e.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -g -O3 -idirafter "/home/david/VSC/IZG/izg_lab06/libs/SDL2-2.0.14/src/video/khronos"  -o CMakeFiles/cmTC_5f28e.dir/CheckSymbolExists.c.o -c /home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: error: ‘_ultoa’ undeclared (first use in this function)
+   14 |   return ((int*)(&_ultoa))[argc];
+      |                   ^~~~~~
+/home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: note: each undeclared identifier is reported only once for each function it appears in
+make[1]: *** [CMakeFiles/cmTC_5f28e.dir/build.make:78: CMakeFiles/cmTC_5f28e.dir/CheckSymbolExists.c.o] Error 1
+make[1]: Leaving directory '/home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:127: cmTC_5f28e/fast] Error 2
+
+
+File /home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stddef.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <wchar.h>
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef _ultoa
+  return ((int*)(&_ultoa))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the _i64toa exist failed with the following output:
+Change Dir: /home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_49a71/fast && /usr/bin/make  -f CMakeFiles/cmTC_49a71.dir/build.make CMakeFiles/cmTC_49a71.dir/build
+make[1]: Entering directory '/home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_49a71.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -g -O3 -idirafter "/home/david/VSC/IZG/izg_lab06/libs/SDL2-2.0.14/src/video/khronos"  -o CMakeFiles/cmTC_49a71.dir/CheckSymbolExists.c.o -c /home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: error: ‘_i64toa’ undeclared (first use in this function)
+   14 |   return ((int*)(&_i64toa))[argc];
+      |                   ^~~~~~~
+/home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: note: each undeclared identifier is reported only once for each function it appears in
+make[1]: *** [CMakeFiles/cmTC_49a71.dir/build.make:78: CMakeFiles/cmTC_49a71.dir/CheckSymbolExists.c.o] Error 1
+make[1]: Leaving directory '/home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:127: cmTC_49a71/fast] Error 2
+
+
+File /home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stddef.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <wchar.h>
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef _i64toa
+  return ((int*)(&_i64toa))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the _ui64toa exist failed with the following output:
+Change Dir: /home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_238e8/fast && /usr/bin/make  -f CMakeFiles/cmTC_238e8.dir/build.make CMakeFiles/cmTC_238e8.dir/build
+make[1]: Entering directory '/home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_238e8.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -g -O3 -idirafter "/home/david/VSC/IZG/izg_lab06/libs/SDL2-2.0.14/src/video/khronos"  -o CMakeFiles/cmTC_238e8.dir/CheckSymbolExists.c.o -c /home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: error: ‘_ui64toa’ undeclared (first use in this function)
+   14 |   return ((int*)(&_ui64toa))[argc];
+      |                   ^~~~~~~~
+/home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: note: each undeclared identifier is reported only once for each function it appears in
+make[1]: *** [CMakeFiles/cmTC_238e8.dir/build.make:78: CMakeFiles/cmTC_238e8.dir/CheckSymbolExists.c.o] Error 1
+make[1]: Leaving directory '/home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:127: cmTC_238e8/fast] Error 2
+
+
+File /home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stddef.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <wchar.h>
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef _ui64toa
+  return ((int*)(&_ui64toa))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the _stricmp exist failed with the following output:
+Change Dir: /home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_35c74/fast && /usr/bin/make  -f CMakeFiles/cmTC_35c74.dir/build.make CMakeFiles/cmTC_35c74.dir/build
+make[1]: Entering directory '/home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_35c74.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -g -O3 -idirafter "/home/david/VSC/IZG/izg_lab06/libs/SDL2-2.0.14/src/video/khronos"  -o CMakeFiles/cmTC_35c74.dir/CheckSymbolExists.c.o -c /home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: error: ‘_stricmp’ undeclared (first use in this function); did you mean ‘strncmp’?
+   14 |   return ((int*)(&_stricmp))[argc];
+      |                   ^~~~~~~~
+      |                   strncmp
+/home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: note: each undeclared identifier is reported only once for each function it appears in
+make[1]: *** [CMakeFiles/cmTC_35c74.dir/build.make:78: CMakeFiles/cmTC_35c74.dir/CheckSymbolExists.c.o] Error 1
+make[1]: Leaving directory '/home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:127: cmTC_35c74/fast] Error 2
+
+
+File /home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stddef.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <wchar.h>
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef _stricmp
+  return ((int*)(&_stricmp))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the _strnicmp exist failed with the following output:
+Change Dir: /home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_d82d5/fast && /usr/bin/make  -f CMakeFiles/cmTC_d82d5.dir/build.make CMakeFiles/cmTC_d82d5.dir/build
+make[1]: Entering directory '/home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_d82d5.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -g -O3 -idirafter "/home/david/VSC/IZG/izg_lab06/libs/SDL2-2.0.14/src/video/khronos"  -o CMakeFiles/cmTC_d82d5.dir/CheckSymbolExists.c.o -c /home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: error: ‘_strnicmp’ undeclared (first use in this function); did you mean ‘strncmp’?
+   14 |   return ((int*)(&_strnicmp))[argc];
+      |                   ^~~~~~~~~
+      |                   strncmp
+/home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: note: each undeclared identifier is reported only once for each function it appears in
+make[1]: *** [CMakeFiles/cmTC_d82d5.dir/build.make:78: CMakeFiles/cmTC_d82d5.dir/CheckSymbolExists.c.o] Error 1
+make[1]: Leaving directory '/home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:127: cmTC_d82d5/fast] Error 2
+
+
+File /home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stddef.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <wchar.h>
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef _strnicmp
+  return ((int*)(&_strnicmp))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the wcslcat exist failed with the following output:
+Change Dir: /home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_5cdb4/fast && /usr/bin/make  -f CMakeFiles/cmTC_5cdb4.dir/build.make CMakeFiles/cmTC_5cdb4.dir/build
+make[1]: Entering directory '/home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_5cdb4.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -g -O3 -idirafter "/home/david/VSC/IZG/izg_lab06/libs/SDL2-2.0.14/src/video/khronos"  -o CMakeFiles/cmTC_5cdb4.dir/CheckSymbolExists.c.o -c /home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: error: ‘wcslcat’ undeclared (first use in this function); did you mean ‘wcsncat’?
+   14 |   return ((int*)(&wcslcat))[argc];
+      |                   ^~~~~~~
+      |                   wcsncat
+/home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: note: each undeclared identifier is reported only once for each function it appears in
+make[1]: *** [CMakeFiles/cmTC_5cdb4.dir/build.make:78: CMakeFiles/cmTC_5cdb4.dir/CheckSymbolExists.c.o] Error 1
+make[1]: Leaving directory '/home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:127: cmTC_5cdb4/fast] Error 2
+
+
+File /home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stddef.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <wchar.h>
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef wcslcat
+  return ((int*)(&wcslcat))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the wcslcpy exist failed with the following output:
+Change Dir: /home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_c4728/fast && /usr/bin/make  -f CMakeFiles/cmTC_c4728.dir/build.make CMakeFiles/cmTC_c4728.dir/build
+make[1]: Entering directory '/home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_c4728.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -g -O3 -idirafter "/home/david/VSC/IZG/izg_lab06/libs/SDL2-2.0.14/src/video/khronos"  -o CMakeFiles/cmTC_c4728.dir/CheckSymbolExists.c.o -c /home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: error: ‘wcslcpy’ undeclared (first use in this function); did you mean ‘wcsncpy’?
+   14 |   return ((int*)(&wcslcpy))[argc];
+      |                   ^~~~~~~
+      |                   wcsncpy
+/home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: note: each undeclared identifier is reported only once for each function it appears in
+make[1]: *** [CMakeFiles/cmTC_c4728.dir/build.make:78: CMakeFiles/cmTC_c4728.dir/CheckSymbolExists.c.o] Error 1
+make[1]: Leaving directory '/home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:127: cmTC_c4728/fast] Error 2
+
+
+File /home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stddef.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <wchar.h>
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef wcslcpy
+  return ((int*)(&wcslcpy))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the _wcsicmp exist failed with the following output:
+Change Dir: /home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_7e111/fast && /usr/bin/make  -f CMakeFiles/cmTC_7e111.dir/build.make CMakeFiles/cmTC_7e111.dir/build
+make[1]: Entering directory '/home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_7e111.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -g -O3 -idirafter "/home/david/VSC/IZG/izg_lab06/libs/SDL2-2.0.14/src/video/khronos"  -o CMakeFiles/cmTC_7e111.dir/CheckSymbolExists.c.o -c /home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: error: ‘_wcsicmp’ undeclared (first use in this function); did you mean ‘wcsncmp’?
+   14 |   return ((int*)(&_wcsicmp))[argc];
+      |                   ^~~~~~~~
+      |                   wcsncmp
+/home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: note: each undeclared identifier is reported only once for each function it appears in
+make[1]: *** [CMakeFiles/cmTC_7e111.dir/build.make:78: CMakeFiles/cmTC_7e111.dir/CheckSymbolExists.c.o] Error 1
+make[1]: Leaving directory '/home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:127: cmTC_7e111/fast] Error 2
+
+
+File /home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stddef.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <wchar.h>
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef _wcsicmp
+  return ((int*)(&_wcsicmp))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the _wcsnicmp exist failed with the following output:
+Change Dir: /home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_5fb32/fast && /usr/bin/make  -f CMakeFiles/cmTC_5fb32.dir/build.make CMakeFiles/cmTC_5fb32.dir/build
+make[1]: Entering directory '/home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_5fb32.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -g -O3 -idirafter "/home/david/VSC/IZG/izg_lab06/libs/SDL2-2.0.14/src/video/khronos"  -o CMakeFiles/cmTC_5fb32.dir/CheckSymbolExists.c.o -c /home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: error: ‘_wcsnicmp’ undeclared (first use in this function); did you mean ‘wcsncmp’?
+   14 |   return ((int*)(&_wcsnicmp))[argc];
+      |                   ^~~~~~~~~
+      |                   wcsncmp
+/home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: note: each undeclared identifier is reported only once for each function it appears in
+make[1]: *** [CMakeFiles/cmTC_5fb32.dir/build.make:78: CMakeFiles/cmTC_5fb32.dir/CheckSymbolExists.c.o] Error 1
+make[1]: Leaving directory '/home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:127: cmTC_5fb32/fast] Error 2
+
+
+File /home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stddef.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <wchar.h>
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef _wcsnicmp
+  return ((int*)(&_wcsnicmp))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the fopen64 exist failed with the following output:
+Change Dir: /home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_93a5f/fast && /usr/bin/make  -f CMakeFiles/cmTC_93a5f.dir/build.make CMakeFiles/cmTC_93a5f.dir/build
+make[1]: Entering directory '/home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_93a5f.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -g -O3 -idirafter "/home/david/VSC/IZG/izg_lab06/libs/SDL2-2.0.14/src/video/khronos"  -o CMakeFiles/cmTC_93a5f.dir/CheckSymbolExists.c.o -c /home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: error: ‘fopen64’ undeclared (first use in this function); did you mean ‘fopen’?
+   14 |   return ((int*)(&fopen64))[argc];
+      |                   ^~~~~~~
+      |                   fopen
+/home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: note: each undeclared identifier is reported only once for each function it appears in
+make[1]: *** [CMakeFiles/cmTC_93a5f.dir/build.make:78: CMakeFiles/cmTC_93a5f.dir/CheckSymbolExists.c.o] Error 1
+make[1]: Leaving directory '/home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:127: cmTC_93a5f/fast] Error 2
+
+
+File /home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stddef.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <wchar.h>
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef fopen64
+  return ((int*)(&fopen64))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the fseeko64 exist failed with the following output:
+Change Dir: /home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_5e72f/fast && /usr/bin/make  -f CMakeFiles/cmTC_5e72f.dir/build.make CMakeFiles/cmTC_5e72f.dir/build
+make[1]: Entering directory '/home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_5e72f.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -g -O3 -idirafter "/home/david/VSC/IZG/izg_lab06/libs/SDL2-2.0.14/src/video/khronos"  -o CMakeFiles/cmTC_5e72f.dir/CheckSymbolExists.c.o -c /home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: error: ‘fseeko64’ undeclared (first use in this function); did you mean ‘fseeko’?
+   14 |   return ((int*)(&fseeko64))[argc];
+      |                   ^~~~~~~~
+      |                   fseeko
+/home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: note: each undeclared identifier is reported only once for each function it appears in
+make[1]: *** [CMakeFiles/cmTC_5e72f.dir/build.make:78: CMakeFiles/cmTC_5e72f.dir/CheckSymbolExists.c.o] Error 1
+make[1]: Leaving directory '/home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:127: cmTC_5e72f/fast] Error 2
+
+
+File /home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stddef.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <wchar.h>
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef fseeko64
+  return ((int*)(&fseeko64))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the sysctlbyname exist failed with the following output:
+Change Dir: /home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_9f42f/fast && /usr/bin/make  -f CMakeFiles/cmTC_9f42f.dir/build.make CMakeFiles/cmTC_9f42f.dir/build
+make[1]: Entering directory '/home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_9f42f.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -g -O3 -idirafter "/home/david/VSC/IZG/izg_lab06/libs/SDL2-2.0.14/src/video/khronos"  -o CMakeFiles/cmTC_9f42f.dir/CheckSymbolExists.c.o -c /home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+In file included from /home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:3:
+/usr/include/x86_64-linux-gnu/sys/sysctl.h:21:2: warning: #warning "The <sys/sysctl.h> header is deprecated and will be removed." [-Wcpp]
+   21 | #warning "The <sys/sysctl.h> header is deprecated and will be removed."
+      |  ^~~~~~~
+/home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:9:19: error: ‘sysctlbyname’ undeclared (first use in this function)
+    9 |   return ((int*)(&sysctlbyname))[argc];
+      |                   ^~~~~~~~~~~~
+/home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:9:19: note: each undeclared identifier is reported only once for each function it appears in
+make[1]: *** [CMakeFiles/cmTC_9f42f.dir/build.make:78: CMakeFiles/cmTC_9f42f.dir/CheckSymbolExists.c.o] Error 1
+make[1]: Leaving directory '/home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:127: cmTC_9f42f/fast] Error 2
+
+
+File /home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <sys/types.h>
+#include <sys/sysctl.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef sysctlbyname
+  return ((int*)(&sysctlbyname))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the elf_aux_info exist failed with the following output:
+Change Dir: /home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_4add2/fast && /usr/bin/make  -f CMakeFiles/cmTC_4add2.dir/build.make CMakeFiles/cmTC_4add2.dir/build
+make[1]: Entering directory '/home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_4add2.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -g -O3 -idirafter "/home/david/VSC/IZG/izg_lab06/libs/SDL2-2.0.14/src/video/khronos"  -o CMakeFiles/cmTC_4add2.dir/CheckSymbolExists.c.o -c /home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: error: ‘elf_aux_info’ undeclared (first use in this function)
+    8 |   return ((int*)(&elf_aux_info))[argc];
+      |                   ^~~~~~~~~~~~
+/home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: note: each undeclared identifier is reported only once for each function it appears in
+make[1]: *** [CMakeFiles/cmTC_4add2.dir/build.make:78: CMakeFiles/cmTC_4add2.dir/CheckSymbolExists.c.o] Error 1
+make[1]: Leaving directory '/home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:127: cmTC_4add2/fast] Error 2
+
+
+File /home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <sys/auxv.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef elf_aux_info
+  return ((int*)(&elf_aux_info))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the function iconv_open exists in the iconv failed with the following output:
+Change Dir: /home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_9bffb/fast && /usr/bin/make  -f CMakeFiles/cmTC_9bffb.dir/build.make CMakeFiles/cmTC_9bffb.dir/build
+make[1]: Entering directory '/home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_9bffb.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -g -O3 -idirafter "/home/david/VSC/IZG/izg_lab06/libs/SDL2-2.0.14/src/video/khronos" -DCHECK_FUNCTION_EXISTS=iconv_open -o CMakeFiles/cmTC_9bffb.dir/CheckFunctionExists.c.o -c /usr/local/share/cmake-3.20/Modules/CheckFunctionExists.c
+Linking C executable cmTC_9bffb
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9bffb.dir/link.txt --verbose=1
+/usr/bin/cc -g -O3 -idirafter "/home/david/VSC/IZG/izg_lab06/libs/SDL2-2.0.14/src/video/khronos" -DCHECK_FUNCTION_EXISTS=iconv_open -rdynamic CMakeFiles/cmTC_9bffb.dir/CheckFunctionExists.c.o -o cmTC_9bffb  -liconv 
+/usr/bin/ld: cannot find -liconv
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_9bffb.dir/build.make:99: cmTC_9bffb] Error 1
+make[1]: Leaving directory '/home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:127: cmTC_9bffb/fast] Error 2
+
+
+
+Determining if the alloca exist failed with the following output:
+Change Dir: /home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_3075e/fast && /usr/bin/make  -f CMakeFiles/cmTC_3075e.dir/build.make CMakeFiles/cmTC_3075e.dir/build
+make[1]: Entering directory '/home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_3075e.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -g -O3 -idirafter "/home/david/VSC/IZG/izg_lab06/libs/SDL2-2.0.14/src/video/khronos"  -o CMakeFiles/cmTC_3075e.dir/CheckSymbolExists.c.o -c /home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: error: ‘alloca’ undeclared (first use in this function); did you mean ‘valloc’?
+    8 |   return ((int*)(&alloca))[argc];
+      |                   ^~~~~~
+      |                   valloc
+/home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: note: each undeclared identifier is reported only once for each function it appears in
+make[1]: *** [CMakeFiles/cmTC_3075e.dir/build.make:78: CMakeFiles/cmTC_3075e.dir/CheckSymbolExists.c.o] Error 1
+make[1]: Leaving directory '/home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:127: cmTC_3075e/fast] Error 2
+
+
+File /home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <malloc.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef alloca
+  return ((int*)(&alloca))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the dlopen exist failed with the following output:
+Change Dir: /home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_13427/fast && /usr/bin/make  -f CMakeFiles/cmTC_13427.dir/build.make CMakeFiles/cmTC_13427.dir/build
+make[1]: Entering directory '/home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_13427.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -g -O3 -idirafter "/home/david/VSC/IZG/izg_lab06/libs/SDL2-2.0.14/src/video/khronos"  -o CMakeFiles/cmTC_13427.dir/CheckSymbolExists.c.o -c /home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_13427
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_13427.dir/link.txt --verbose=1
+/usr/bin/cc -g -O3 -idirafter "/home/david/VSC/IZG/izg_lab06/libs/SDL2-2.0.14/src/video/khronos"  -rdynamic CMakeFiles/cmTC_13427.dir/CheckSymbolExists.c.o -o cmTC_13427 
+/usr/bin/ld: CMakeFiles/cmTC_13427.dir/CheckSymbolExists.c.o: in function `main':
+/home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8: undefined reference to `dlopen'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_13427.dir/build.make:99: cmTC_13427] Error 1
+make[1]: Leaving directory '/home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:127: cmTC_13427/fast] Error 2
+
+
+File /home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <dlfcn.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef dlopen
+  return ((int*)(&dlopen))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the include file audio/audiolib.h exists failed with the following output:
+Change Dir: /home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_03694/fast && /usr/bin/make  -f CMakeFiles/cmTC_03694.dir/build.make CMakeFiles/cmTC_03694.dir/build
+make[1]: Entering directory '/home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_03694.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -g -O3 -idirafter "/home/david/VSC/IZG/izg_lab06/libs/SDL2-2.0.14/src/video/khronos"  -o CMakeFiles/cmTC_03694.dir/CheckIncludeFile.c.o -c /home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: audio/audiolib.h: No such file or directory
+    1 | #include <audio/audiolib.h>
+      |          ^~~~~~~~~~~~~~~~~~
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTC_03694.dir/build.make:78: CMakeFiles/cmTC_03694.dir/CheckIncludeFile.c.o] Error 1
+make[1]: Leaving directory '/home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:127: cmTC_03694/fast] Error 2
+
+
+
+Determining if the include file sndio.h exists failed with the following output:
+Change Dir: /home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_484c6/fast && /usr/bin/make  -f CMakeFiles/cmTC_484c6.dir/build.make CMakeFiles/cmTC_484c6.dir/build
+make[1]: Entering directory '/home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_484c6.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -g -O3 -idirafter "/home/david/VSC/IZG/izg_lab06/libs/SDL2-2.0.14/src/video/khronos"  -o CMakeFiles/cmTC_484c6.dir/CheckIncludeFile.c.o -c /home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: sndio.h: No such file or directory
+    1 | #include <sndio.h>
+      |          ^~~~~~~~~
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTC_484c6.dir/build.make:78: CMakeFiles/cmTC_484c6.dir/CheckIncludeFile.c.o] Error 1
+make[1]: Leaving directory '/home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:127: cmTC_484c6/fast] Error 2
+
+
+
+Determining if the include file samplerate.h exists failed with the following output:
+Change Dir: /home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_6850e/fast && /usr/bin/make  -f CMakeFiles/cmTC_6850e.dir/build.make CMakeFiles/cmTC_6850e.dir/build
+make[1]: Entering directory '/home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_6850e.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -g -O3 -idirafter "/home/david/VSC/IZG/izg_lab06/libs/SDL2-2.0.14/src/video/khronos"  -o CMakeFiles/cmTC_6850e.dir/CheckIncludeFile.c.o -c /home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: samplerate.h: No such file or directory
+    1 | #include <samplerate.h>
+      |          ^~~~~~~~~~~~~~
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTC_6850e.dir/build.make:78: CMakeFiles/cmTC_6850e.dir/CheckIncludeFile.c.o] Error 1
+make[1]: Leaving directory '/home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:127: cmTC_6850e/fast] Error 2
+
+
+
+Performing C SOURCE FILE Test HAVE_VIDEO_RPI failed with the following output:
+Change Dir: /home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_82fd5/fast && /usr/bin/make  -f CMakeFiles/cmTC_82fd5.dir/build.make CMakeFiles/cmTC_82fd5.dir/build
+make[1]: Entering directory '/home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_82fd5.dir/src.c.o
+/usr/bin/cc -DHAVE_VIDEO_RPI  -g -O3 -idirafter "/home/david/VSC/IZG/izg_lab06/libs/SDL2-2.0.14/src/video/khronos"  -I/opt/vc/include/interface/vmcs_host/linux/ -I/opt/vc/include/interface/vcos/pthreads -I/opt/vc/include  -L/opt/vc/lib -o CMakeFiles/cmTC_82fd5.dir/src.c.o -c /home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp/src.c
+/home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp/src.c:2:18: fatal error: bcm_host.h: No such file or directory
+    2 |         #include <bcm_host.h>
+      |                  ^~~~~~~~~~~~
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTC_82fd5.dir/build.make:78: CMakeFiles/cmTC_82fd5.dir/src.c.o] Error 1
+make[1]: Leaving directory '/home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:127: cmTC_82fd5/fast] Error 2
+
+
+Source file was:
+
+        #include <bcm_host.h>
+        int main(int argc, char **argv) {}
+Determining if the include file X11/Xcursor/Xcursor.h exists failed with the following output:
+Change Dir: /home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_4a0cb/fast && /usr/bin/make  -f CMakeFiles/cmTC_4a0cb.dir/build.make CMakeFiles/cmTC_4a0cb.dir/build
+make[1]: Entering directory '/home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_4a0cb.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -g -O3 -idirafter "/home/david/VSC/IZG/izg_lab06/libs/SDL2-2.0.14/src/video/khronos"  -o CMakeFiles/cmTC_4a0cb.dir/CheckIncludeFile.c.o -c /home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: X11/Xcursor/Xcursor.h: No such file or directory
+    1 | #include <X11/Xcursor/Xcursor.h>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTC_4a0cb.dir/build.make:78: CMakeFiles/cmTC_4a0cb.dir/CheckIncludeFile.c.o] Error 1
+make[1]: Leaving directory '/home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:127: cmTC_4a0cb/fast] Error 2
+
+
+
+Determining if the include file X11/extensions/Xinerama.h exists failed with the following output:
+Change Dir: /home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_b8dd3/fast && /usr/bin/make  -f CMakeFiles/cmTC_b8dd3.dir/build.make CMakeFiles/cmTC_b8dd3.dir/build
+make[1]: Entering directory '/home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b8dd3.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -g -O3 -idirafter "/home/david/VSC/IZG/izg_lab06/libs/SDL2-2.0.14/src/video/khronos"  -o CMakeFiles/cmTC_b8dd3.dir/CheckIncludeFile.c.o -c /home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: X11/extensions/Xinerama.h: No such file or directory
+    1 | #include <X11/extensions/Xinerama.h>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTC_b8dd3.dir/build.make:78: CMakeFiles/cmTC_b8dd3.dir/CheckIncludeFile.c.o] Error 1
+make[1]: Leaving directory '/home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:127: cmTC_b8dd3/fast] Error 2
+
+
+
+Determining if the include file X11/extensions/XInput2.h exists failed with the following output:
+Change Dir: /home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_f492f/fast && /usr/bin/make  -f CMakeFiles/cmTC_f492f.dir/build.make CMakeFiles/cmTC_f492f.dir/build
+make[1]: Entering directory '/home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f492f.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -g -O3 -idirafter "/home/david/VSC/IZG/izg_lab06/libs/SDL2-2.0.14/src/video/khronos"  -o CMakeFiles/cmTC_f492f.dir/CheckIncludeFile.c.o -c /home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: X11/extensions/XInput2.h: No such file or directory
+    1 | #include <X11/extensions/XInput2.h>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTC_f492f.dir/build.make:78: CMakeFiles/cmTC_f492f.dir/CheckIncludeFile.c.o] Error 1
+make[1]: Leaving directory '/home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:127: cmTC_f492f/fast] Error 2
+
+
+
+Determining if the include file X11/extensions/Xrandr.h exists failed with the following output:
+Change Dir: /home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_665ed/fast && /usr/bin/make  -f CMakeFiles/cmTC_665ed.dir/build.make CMakeFiles/cmTC_665ed.dir/build
+make[1]: Entering directory '/home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_665ed.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -g -O3 -idirafter "/home/david/VSC/IZG/izg_lab06/libs/SDL2-2.0.14/src/video/khronos"  -o CMakeFiles/cmTC_665ed.dir/CheckIncludeFile.c.o -c /home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: X11/extensions/Xrandr.h: No such file or directory
+    1 | #include <X11/extensions/Xrandr.h>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTC_665ed.dir/build.make:78: CMakeFiles/cmTC_665ed.dir/CheckIncludeFile.c.o] Error 1
+make[1]: Leaving directory '/home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:127: cmTC_665ed/fast] Error 2
+
+
+
+Determining if the include file X11/extensions/Xrender.h exists failed with the following output:
+Change Dir: /home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_b82bc/fast && /usr/bin/make  -f CMakeFiles/cmTC_b82bc.dir/build.make CMakeFiles/cmTC_b82bc.dir/build
+make[1]: Entering directory '/home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b82bc.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -g -O3 -idirafter "/home/david/VSC/IZG/izg_lab06/libs/SDL2-2.0.14/src/video/khronos"  -o CMakeFiles/cmTC_b82bc.dir/CheckIncludeFile.c.o -c /home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: X11/extensions/Xrender.h: No such file or directory
+    1 | #include <X11/extensions/Xrender.h>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTC_b82bc.dir/build.make:78: CMakeFiles/cmTC_b82bc.dir/CheckIncludeFile.c.o] Error 1
+make[1]: Leaving directory '/home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:127: cmTC_b82bc/fast] Error 2
+
+
+
+Determining if the include file X11/extensions/scrnsaver.h exists failed with the following output:
+Change Dir: /home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_884a3/fast && /usr/bin/make  -f CMakeFiles/cmTC_884a3.dir/build.make CMakeFiles/cmTC_884a3.dir/build
+make[1]: Entering directory '/home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_884a3.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -g -O3 -idirafter "/home/david/VSC/IZG/izg_lab06/libs/SDL2-2.0.14/src/video/khronos"  -o CMakeFiles/cmTC_884a3.dir/CheckIncludeFile.c.o -c /home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: X11/extensions/scrnsaver.h: No such file or directory
+    1 | #include <X11/extensions/scrnsaver.h>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTC_884a3.dir/build.make:78: CMakeFiles/cmTC_884a3.dir/CheckIncludeFile.c.o] Error 1
+make[1]: Leaving directory '/home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:127: cmTC_884a3/fast] Error 2
+
+
+
+Determining if files X11/Xlib.h;X11/extensions/xf86vmode.h exist failed with the following output:
+Change Dir: /home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_2d8cb/fast && /usr/bin/make  -f CMakeFiles/cmTC_2d8cb.dir/build.make CMakeFiles/cmTC_2d8cb.dir/build
+make[1]: Entering directory '/home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_2d8cb.dir/HAVE_XF86VM_H.c.o
+/usr/bin/cc   -g -O3 -idirafter "/home/david/VSC/IZG/izg_lab06/libs/SDL2-2.0.14/src/video/khronos"  -o CMakeFiles/cmTC_2d8cb.dir/HAVE_XF86VM_H.c.o -c /home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CheckIncludeFiles/HAVE_XF86VM_H.c
+/home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CheckIncludeFiles/HAVE_XF86VM_H.c:3:10: fatal error: X11/extensions/xf86vmode.h: No such file or directory
+    3 | #include <X11/extensions/xf86vmode.h>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTC_2d8cb.dir/build.make:78: CMakeFiles/cmTC_2d8cb.dir/HAVE_XF86VM_H.c.o] Error 1
+make[1]: Leaving directory '/home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:127: cmTC_2d8cb/fast] Error 2
+
+
+Source:
+/* */
+#include <X11/Xlib.h>
+#include <X11/extensions/xf86vmode.h>
+
+
+int main(void){return 0;}
+
+Performing C SOURCE FILE Test HAVE_VIDEO_VIVANTE_VDK failed with the following output:
+Change Dir: /home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_684ae/fast && /usr/bin/make  -f CMakeFiles/cmTC_684ae.dir/build.make CMakeFiles/cmTC_684ae.dir/build
+make[1]: Entering directory '/home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_684ae.dir/src.c.o
+/usr/bin/cc -DHAVE_VIDEO_VIVANTE_VDK  -g -O3 -idirafter "/home/david/VSC/IZG/izg_lab06/libs/SDL2-2.0.14/src/video/khronos"   -o CMakeFiles/cmTC_684ae.dir/src.c.o -c /home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp/src.c
+/home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp/src.c:2:18: fatal error: gc_vdk.h: No such file or directory
+    2 |         #include <gc_vdk.h>
+      |                  ^~~~~~~~~~
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTC_684ae.dir/build.make:78: CMakeFiles/cmTC_684ae.dir/src.c.o] Error 1
+make[1]: Leaving directory '/home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:127: cmTC_684ae/fast] Error 2
+
+
+Source file was:
+
+        #include <gc_vdk.h>
+        int main(int argc, char** argv) {}
+Performing C SOURCE FILE Test HAVE_VIDEO_VIVANTE_EGL_FB failed with the following output:
+Change Dir: /home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_ad675/fast && /usr/bin/make  -f CMakeFiles/cmTC_ad675.dir/build.make CMakeFiles/cmTC_ad675.dir/build
+make[1]: Entering directory '/home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ad675.dir/src.c.o
+/usr/bin/cc -DHAVE_VIDEO_VIVANTE_EGL_FB  -g -O3 -idirafter "/home/david/VSC/IZG/izg_lab06/libs/SDL2-2.0.14/src/video/khronos"   -o CMakeFiles/cmTC_ad675.dir/src.c.o -c /home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp/src.c
+/home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp/src.c:4:18: fatal error: EGL/eglvivante.h: No such file or directory
+    4 |         #include <EGL/eglvivante.h>
+      |                  ^~~~~~~~~~~~~~~~~~
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTC_ad675.dir/build.make:78: CMakeFiles/cmTC_ad675.dir/src.c.o] Error 1
+make[1]: Leaving directory '/home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:127: cmTC_ad675/fast] Error 2
+
+
+Source file was:
+
+        #define LINUX
+        #define EGL_API_FB
+        #include <EGL/eglvivante.h>
+        int main(int argc, char** argv) {}
+Determining if the include file libudev.h exists failed with the following output:
+Change Dir: /home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_38ebb/fast && /usr/bin/make  -f CMakeFiles/cmTC_38ebb.dir/build.make CMakeFiles/cmTC_38ebb.dir/build
+make[1]: Entering directory '/home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_38ebb.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -g -O3 -idirafter "/home/david/VSC/IZG/izg_lab06/libs/SDL2-2.0.14/src/video/khronos"   -o CMakeFiles/cmTC_38ebb.dir/CheckIncludeFile.c.o -c /home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: libudev.h: No such file or directory
+    1 | #include <libudev.h>
+      |          ^~~~~~~~~~~
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTC_38ebb.dir/build.make:78: CMakeFiles/cmTC_38ebb.dir/CheckIncludeFile.c.o] Error 1
+make[1]: Leaving directory '/home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:127: cmTC_38ebb/fast] Error 2
+
+
+
+Determining if files pthread_np.h exist failed with the following output:
+Change Dir: /home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_19720/fast && /usr/bin/make  -f CMakeFiles/cmTC_19720.dir/build.make CMakeFiles/cmTC_19720.dir/build
+make[1]: Entering directory '/home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_19720.dir/HAVE_PTHREAD_NP_H.c.o
+/usr/bin/cc   -g -O3 -idirafter "/home/david/VSC/IZG/izg_lab06/libs/SDL2-2.0.14/src/video/khronos"   -D_REENTRANT -pthread -o CMakeFiles/cmTC_19720.dir/HAVE_PTHREAD_NP_H.c.o -c /home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CheckIncludeFiles/HAVE_PTHREAD_NP_H.c
+/home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CheckIncludeFiles/HAVE_PTHREAD_NP_H.c:2:10: fatal error: pthread_np.h: No such file or directory
+    2 | #include <pthread_np.h>
+      |          ^~~~~~~~~~~~~~
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTC_19720.dir/build.make:78: CMakeFiles/cmTC_19720.dir/HAVE_PTHREAD_NP_H.c.o] Error 1
+make[1]: Leaving directory '/home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:127: cmTC_19720/fast] Error 2
+
+
+Source:
+/* */
+#include <pthread_np.h>
+
+
+int main(void){return 0;}
+
+Determining if the pthread_setname_np exist failed with the following output:
+Change Dir: /home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_6d852/fast && /usr/bin/make  -f CMakeFiles/cmTC_6d852.dir/build.make CMakeFiles/cmTC_6d852.dir/build
+make[1]: Entering directory '/home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_6d852.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -g -O3 -idirafter "/home/david/VSC/IZG/izg_lab06/libs/SDL2-2.0.14/src/video/khronos"   -D_REENTRANT -pthread -o CMakeFiles/cmTC_6d852.dir/CheckSymbolExists.c.o -c /home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: error: ‘pthread_setname_np’ undeclared (first use in this function); did you mean ‘pthread_setcanceltype’?
+    8 |   return ((int*)(&pthread_setname_np))[argc];
+      |                   ^~~~~~~~~~~~~~~~~~
+      |                   pthread_setcanceltype
+/home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: note: each undeclared identifier is reported only once for each function it appears in
+make[1]: *** [CMakeFiles/cmTC_6d852.dir/build.make:78: CMakeFiles/cmTC_6d852.dir/CheckSymbolExists.c.o] Error 1
+make[1]: Leaving directory '/home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:127: cmTC_6d852/fast] Error 2
+
+
+File /home/david/VSC/IZG/izg_lab06/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_setname_np
+  return ((int*)(&pthread_setname_np))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
